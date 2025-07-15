@@ -211,4 +211,4 @@ kubectl apply -f k8s/deployment.yaml
 
 ## 📫 **Let’s Connect**
 
-💼 [LinkedIn](https://www.linkedin.com/in/keshavprasad1017/)
+💼 [LinkedIn]((https://www.linkedin.com/in/shrishti-singh-t/))
