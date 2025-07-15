@@ -1,78 +1,67 @@
-# 🚀 **Capstone MLOps Project**
+# 🚀 **End-to-End MLOps Project**
 
-Welcome to my end-to-end **MLOps Capstone Project** — a production-ready machine learning workflow that covers everything from **data ingestion** to **deployment on Kubernetes (EKS)**, complete with **CI/CD pipelines**, **monitoring**, and **cloud infrastructure**.
-
----
-
-## 🌟 **Project Highlights**
-
-👉 **MLOps Best Practices:**
-✔️ Reproducible pipelines using **DVC**
-✔️ Experiment tracking with **MLflow on Dagshub**
-✔️ Automated workflows via **GitHub Actions**
-
-👉 **Containerization & Deployment:**
-✔️ Packaged with **Docker**
-✔️ Deployed on **AWS EKS (Kubernetes)**
-✔️ Scalable REST API using **Flask**
-
-👉 **Monitoring & Observability:**
-✔️ **Prometheus** for metrics scraping
-✔️ **Grafana** for beautiful dashboards
-
-👉 **Cloud-Native Infrastructure:**
-✔️ **AWS S3** for artifact storage
-✔️ **AWS ECR** for Docker image repository
-✔️ **IAM** for secure access
+A **production-grade machine learning pipeline** that spans the complete lifecycle — from **data ingestion** and **model training** to **deployment on AWS EKS** with full **CI/CD automation** and **real-time monitoring**.
 
 ---
 
-## ⚙️ **Tech Stack**
+## 🌟 **Key Features**
 
-| Category               | Tool/Tech                                 |
-| ---------------------- | ----------------------------------------- |
-| 🏗️ Project Scaffold   | `cookiecutter-data-science`               |
-| 📦 Environment         | `conda`, `pip`, `Docker`                  |
-| 📊 Experiment Tracking | `MLflow`, `Dagshub`                       |
-| 📁 Data Versioning     | `DVC`, `AWS S3`                           |
-| 🚀 Deployment          | `Flask`, `Docker`, `AWS EKS (Kubernetes)` |
-| 🔄 CI/CD               | `GitHub Actions`                          |
-| 📈 Monitoring          | `Prometheus`, `Grafana`                   |
-| ☁ Cloud                | `AWS IAM`, `S3`, `ECR`, `EKS`             |
+### ✅ MLOps Best Practices
+
+* 🔁 **Reproducible pipelines** using `DVC`
+* 🧪 **Experiment tracking** with `MLflow` hosted on Dagshub
+* 🤖 **Automated CI/CD** via `GitHub Actions`
+
+### 🐳 Containerization & Scalable Deployment
+
+* 📦 Packaged with `Docker`
+* 🚀 Deployed on **AWS EKS (Kubernetes)**
+* 🌐 REST API built using `Flask`
+
+### 📈 Monitoring & Observability
+
+* 📊 Metrics with `Prometheus`
+* 📉 Dashboards with `Grafana`
+
+### ☁️ Cloud Infrastructure
+
+* 🗂️ `AWS S3` for artifact storage
+* 📤 `AWS ECR` for Docker images
+* 🔐 `AWS IAM` for secure access management
 
 ---
 
-## 🛠️ **Project Workflow**
+## ⚙️ **Technology Stack**
+
+| Area                   | Tools & Services              |
+| ---------------------- | ----------------------------- |
+| 📁 Project Structure   | `cookiecutter-data-science`   |
+| 🧪 Experiment Tracking | `MLflow`, `Dagshub`           |
+| 📦 Data Versioning     | `DVC`, `AWS S3`               |
+| 🧪 Environment         | `Conda`, `Pip`, `Docker`      |
+| 🚀 Deployment          | `Flask`, `Docker`, `AWS EKS`  |
+| 🔄 CI/CD               | `GitHub Actions`              |
+| 📈 Monitoring          | `Prometheus`, `Grafana`       |
+| ☁ Cloud Services       | `AWS IAM`, `S3`, `ECR`, `EKS` |
+
+---
+
+## 🔄 **MLOps Lifecycle Workflow**
 
 ```mermaid
-flowchart TB
-  CENTER["🚀 MLOps Lifecycle"]
+flowchart TD
+    START["🚀 MLOps Lifecycle Start"]
+    INGEST["📥 Data Ingestion"]
+    PREPROCESS["🧹 Data Preprocessing & Feature Engineering"]
+    TRAIN["🤖 Model Training & MLflow Tracking"]
+    VERSION["📦 DVC + AWS S3"]
+    CONTAINER["🐳 Docker Containerization"]
+    DEPLOY["🧬 Deployment on AWS EKS"]
+    MONITOR["📈 Monitoring with Prometheus & Grafana"]
 
-  %% Data Pipeline
-  INGEST["📥 Ingest Data"]
-  PREP["🧹 Preprocess + Feature Engg"]
-  MODEL["🤖 Train + Track - MLflow"]
-  VERSION["📦 DVC + S3"]
-
-  %% Deployment
-  DOCKER["🐳 Docker + ECR"]
-  K8S["🧬 EKS Deployment"]
-
-  %% Monitoring
-  MON["📈 Prometheus + Grafana"]
-
-  %% Connections
-  CENTER --> INGEST
-  INGEST --> PREP
-  PREP --> MODEL
-  MODEL --> VERSION
-  MODEL --> DOCKER
-  DOCKER --> K8S
-  K8S --> MON
+    START --> INGEST --> PREPROCESS --> TRAIN --> VERSION
+    TRAIN --> CONTAINER --> DEPLOY --> MONITOR
 ```
-
----
-
 ## 📝 **Setup & Flow**
 
 ### 🔹 Repository & Structure
